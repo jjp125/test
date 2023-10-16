@@ -1,0 +1,17 @@
+<div style="display:none;" id="message" class="message">Your request has been received and will be reviewed by our support team. We will be reaching out to you as soon as possible.</div>
+
+<script type="text/javascript">
+  
+const queryString = window.location.search;
+
+const urlParams = new URLSearchParams(queryString);
+
+const formsubmit = urlParams.get('form-submit');
+if (formsubmit == "1"){
+	alert("we are in");
+	document.getElementById('message').style.display = 'block';
+}
+
+</script>
+
+
